@@ -28,7 +28,7 @@ function directPage() {
         if (userName == "admin" && password == "admin") {
             window.location = "https://gobikrishnas.github.io/library/admin-page/";
         } else {
-            window.location = "https://gobikrishnas.github.io/html-css/library-management/";
+            window.location = "https://gobikrishnas.github.io/library/user-page/";
         }
     }
 }
