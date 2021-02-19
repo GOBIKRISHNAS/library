@@ -182,3 +182,20 @@ form.search button:hover {
   left: 240px;
   border-radius: 10px;
 }
+
+ul.side-bar li:nth-child(7) {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: white;
+  top: 600px;
+  left: 40px;
+  position: absolute;
+  font-size: 20px;
+  background: None;
+  border: none;
+}
+
+a{
+  color:white;
+  top: 500px;
+  left: 40px; 
+}
