@@ -26,7 +26,7 @@ function directPage() {
     var password = document.getElementsByName("Password")[0].value;
     if ((userName != "" || password != "")) {
         if (userName == "admin" && password == "admin") {
-            window.location = "https://gobikrishnas.github.io/images/library.jpg";
+            window.location = "https://gobikrishnas.github.io/library/admin-page/";
         } else {
             window.location = "https://gobikrishnas.github.io/html-css/library-management/";
         }
