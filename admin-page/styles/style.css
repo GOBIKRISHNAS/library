@@ -1,0 +1,184 @@
+.user-img {
+  background: url('https://img.icons8.com/bubbles/2x/user-male.png') no-repeat;
+  width: 120px;
+  height: 120px;
+  background-size: 100%;
+  left: 80px;
+  position: absolute;
+}
+
+.side-bar {
+  z-index: -1;
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  margin: auto;
+  top: 0px;
+  left: 0px;
+  background: darkslategrey;
+}
+
+ul.side-bar {
+  list-style-type: none;
+  text-align: center;
+}
+
+ul.side-bar li:nth-child(1) {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: white;
+  top: 100px;
+  left: 40px;
+  position: absolute;
+}
+
+ul.side-bar li {
+  margin-bottom: 5px;
+}
+
+ul.side-bar li:nth-child(2) button {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: white;
+  top: 200px;
+  left: 40px;
+  position: absolute;
+  font-size: 20px;
+  background: None;
+  border: none;
+}
+
+ul.side-bar li:nth-child(3) button {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: white;
+  top: 250px;
+  left: 40px;
+  position: absolute;
+  font-size: 20px;
+  background: None;
+  border: none;
+}
+
+ul.side-bar li:nth-child(4) button {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: white;
+  top: 300px;
+  left: 40px;
+  position: absolute;
+  font-size: 20px;
+  background: None;
+  border: none;
+}
+
+ul.side-bar li:nth-child(5) button {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: white;
+  top: 350px;
+  left: 40px;
+  position: absolute;
+  font-size: 20px;
+  background: None;
+  border: none;
+}
+
+ul.side-bar li:nth-child(6) button {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: white;
+  top: 400px;
+  left: 40px;
+  position: absolute;
+  font-size: 20px;
+  background: None;
+  border: none;
+}
+
+.main-content {
+  background: dimgrey;
+  position: absolute;
+  margin: auto;
+  width: 78.8%;
+  height: 100%;
+  top: 0px;
+  left: 290px;
+}
+
+.table-content {
+  width: 95%;
+  top: 130px;
+  left: 20px;
+  position: absolute;
+  border-collapse: separate;
+  border-spacing: 40px 0;
+}
+
+#td_available_books {
+  margin: auto;
+  background: rgb(122, 243, 233);
+  text-align: center;
+  border-radius: 10px;
+  height: 150px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: white;
+  font-size: 20px;
+}
+
+#td_new_arrivals {
+  margin: auto;
+  color: white;
+  background: rgb(119, 204, 233);
+  text-align: center;
+  border-radius: 10px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: white;
+  font-size: 20px;
+}
+
+#td_books_borrowed {
+  margin: auto;
+  color: white;
+  background: rgb(115, 228, 115);
+  text-align: center;
+  border-radius: 10px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: white;
+  font-size: 20px;
+}
+
+form.search input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  top: 30px;
+  left: 60px;
+  position: absolute;
+}
+
+form.search button {
+  width: 10%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  position: absolute;
+  left: 83%;
+  top: 30px;
+}
+
+form.search button:hover {
+  background: #0b7dda;
+}
+
+
+.quotes {
+  position: absolute;
+  margin: auto;
+  width: 600px;
+  height: 45%;
+  top: 330px;
+  left: 240px;
+  border-radius: 10px;
+}
