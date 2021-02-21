@@ -1,6 +1,7 @@
 var login_credentials = [
     {username: "krishna", password: "123456"},
-    {username: "abirami", password: "098765"}
+    {username: "abirami", password: "098765"},
+    {username: "admin", password: "admin"}
 ];
 
 var form = document.getElementById("form");
