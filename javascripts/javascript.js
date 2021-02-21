@@ -1,3 +1,8 @@
+var login_credentials = [
+    {username: "krishna", password: "123456"},
+    {username: "abirami", password: "098765"}
+];
+
 var form = document.getElementById("form");
 
 var btn = document.getElementById("myBtn");
@@ -15,20 +20,29 @@ span.onclick = function() {
 function validationForm() {
     var userName = document.getElementsByName("User Name")[0].value;
     var password = document.getElementsByName("Password")[0].value;
-
-    if (userName == "" || password == "") {
-        alert("Please Type the User Name and Password Correctly...");
+    
+    if (userName == null || userName == "") {
+        document.getElementById('username_error').innerHTML = 'User name must be filled out';
+    }
+    if (password == null || password == "") {
+        document.getElementById('password_error').innerHTML = 'Password must be filled out';
     }
 }
 
 function directPage() {
     var userName = document.getElementsByName("User Name")[0].value;
     var password = document.getElementsByName("Password")[0].value;
-    if ((userName != "" || password != "")) {
+    var obj = login_credentials.find(o => o.username === userName);
+    if (typeof(obj)=="undefined"){
+        document.getElementById('username_error').innerHTML = 'Invalid Username!..';
+    }else if ((userName != "" || password != "")) {
         if (userName == "admin" && password == "admin") {
             window.location = "https://gobikrishnas.github.io/library/admin-page/";
-        } else {
+        } else if(obj.password == password){
             window.location = "https://gobikrishnas.github.io/library/user-page/";
+        }else {
+            document.getElementById('username_error').innerHTML = '';
+            document.getElementById('password_error').innerHTML = 'Invalid Password!';
         }
     }
 }
