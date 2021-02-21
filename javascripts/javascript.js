@@ -46,4 +46,5 @@ function directPage() {
             document.getElementById('password_error').innerHTML = 'Invalid Password!';
         }
     }
+    localStorage.setItem("userName", userName);
 }
