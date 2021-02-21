@@ -1,40 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Page</title>
-    <link href="styles/style.css" rel="stylesheet">
-</head>
-<body>
-    <div class = "admin">
-        <div class="user-img"></div>
-        <ul class="side-bar">
-            <li class= "admin"><h1>Administrator</h1></li>
-            <li><button id="dashboard">Dashboard</button>
-            </li>
-            <li><button id="available_books">Available Books</button></li>
-            <li><button id="books_borrowed">Books Borrowed</button></li>
-            <li><button id="new_arrivals">New Arrivals</button></li>
-            <li><button id="add_books">Add Books</button></li>
-            <li><a href= "https://gobikrishnas.github.io/library/">Back</li>
-        </ul>
-        <div class="main-content">
-            <form class="search" action="/action_page.php">
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit">Search</i></button>
-            </form>
-            <table class="table-content">
-                <tr>
-                    <td id="td_available_books">Available Books<br><br>2500</td>
-                    <td id="td_new_arrivals">New Arrivals<br><br>500</td>
-                    <td id="td_books_borrowed">Books Borrowed<br><br>250</td>
-                </tr>
-            </table>
-            <div><img class="quotes" src="https://image.slidesharecdn.com/libraryquotes-latest-140415143908-phpapp02/95/happy-national-library-week-library-quotes-14-638.jpg?cb=1397572824"></div>
-        </div>
-    </div>
-    <script src="javascripts/javascript.js"></script>
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="styles/style.css" rel="stylesheet">
+      <title>Home Page</title>
+   </head>
+   <body>
+      <div class="side-bar">
+         <div class="user-img"></div>
+         <div class="user-name"></div>
+         <div class="options-list">
+            <li><button>Dashboard</button></li>
+            <li><button>Available Books</button></li>
+            <li><button>Books Borrowed</button></li>
+            <li><button>New Arrivals</button></li>
+            <li><button>Add Books</button></li>
+            <li><button><a href= "https://gobikrishnas.github.io/library/">Logout</a></button></li>
+         </div>
+      </div>
+      <div class="main-content">
+         <div class="wrap">
+            <div class="search">
+               <input type="text" class="searchTerm" placeholder="Search for books...">
+               <button type="submit" class="searchButton">Search</button>
+            </div>
+         </div>
+      </div>
+      <script src="javascripts/javascript.js"></script>
+   </body>
 </html>
