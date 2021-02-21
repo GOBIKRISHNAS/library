@@ -19,8 +19,14 @@
             <li>
                <h2>Login</h2>
             </li>
-            <li><input type="text" name="User Name" placeholder="User Name"></li>
-            <li><input type="text" name="Password" placeholder="Password"></li>
+            <li>
+               <input type="text" id="name" name="User Name" placeholder="User Name">
+               <span class="error"><p id="username_error"></p></span>
+            </li>
+            <li>
+               <input type="text" name="Password" placeholder="Password">
+               <span class="error"><p id="password_error"></p></span>
+            </li>
             <li><button onclick="validationForm();directPage();">Login</button></li>
             <li>Forgot Password?</li>
          </ul>
