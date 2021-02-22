@@ -1,22 +1,26 @@
-var books_available = 250
-var books_borrwed = 100
-var new_arrivals = 50
+books_list = [
+    {name: "Eating in the Age of Dieting", author: "Rujuta Diwekar", cost: "₹265.00", books_available: 2, img_url: "https://images-eu.ssl-images-amazon.com/images/I/31970VMFv5L._AC_SX184_.jpg"},
+    {name: "The Complete Novels of Sherlock Holmes", author: "Arthur Conan Doyle", cost: "₹₹149", books_available: 4, img_url: "https://images-eu.ssl-images-amazon.com/images/I/41tT5SJp6+L._AC_SX184_.jpg"},
+]
 
-document.getElementsByClassName("user-name")[0].innerHTML = localStorage.getItem("userName");
-document.getElementById("new-arrivals").innerHTML = new_arrivals;
-document.getElementById("books-available").innerHTML = books_available;
-document.getElementById("books-borrowed").innerHTML = books_borrwed;
+str=""
 
-var form = document.getElementById("form");
-
-var btn = document.getElementById("myBtn");
-
-var span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function() {
-    form.style.display = "block";
+if (books_list.length>0){
+for (i = 0; i < books_list.length; i++) {
+    str = str + "<li><img src = '"+ books_list[i].img_url + "' alt='' width=180px id='pic'><div class='details'><h1>" + books_list[i].name + "</h1><p>" + books_list[i].author +"</p><p>" + books_list[i].cost + "</p><p>Books Available: " + books_list[i].books_available + "</p><input type='button' value='Buy Now'></div></li>"
+}}
+else{
+    str = "NO Books Available"
 }
 
-span.onclick = function() {
-    form.style.display = "none";
+document.getElementById("content").innerHTML = str
+
+function validationForm() {
+    
+    if (localStorage.getItem("userName") == "admin") {
+        window.location = "https://gobikrishnas.github.io/library/admin-page/";
+    }
+    else{
+        window.location = "https://gobikrishnas.github.io/library/user-page/";
+    }
 }
