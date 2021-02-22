@@ -24,3 +24,4 @@ function validationForm() {
         window.location = "https://gobikrishnas.github.io/library/user-page/";
     }
 }
+
