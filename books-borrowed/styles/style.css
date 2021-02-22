@@ -1,0 +1,51 @@
+body{
+    background: rgb(220, 224, 224);
+    width: 100%;
+    height: 100%;
+}
+.page-name{
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 30px;
+}
+hr{
+    border: none;
+}
+#wrapper ul {
+    padding: 0;
+    margin: auto;
+    width: 60%;
+    list-style-type: none;
+}
+
+#wrapper ul li {
+    background-color:white;
+    padding: 30px;
+    margin-bottom: 15px;
+    display: table;
+    width: 100%;
+}
+#wrapper ul li img {
+    position: absolute;
+    float: left;
+    width: 150px;
+    height: 200px;
+}
+#wrapper ul li .details {
+    float: right;
+    width: 75%;
+    margin: auto;
+}
+.back-button button{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+}
