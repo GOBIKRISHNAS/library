@@ -1,4 +1,7 @@
-books_list = []
+books_list = [
+    {name: "Eating in the Age of Dieting", author: "Rujuta Diwekar", cost: "₹265.00", books_available: 2, img_url: "https://images-eu.ssl-images-amazon.com/images/I/31970VMFv5L._AC_SX184_.jpg"},
+    {name: "The Complete Novels of Sherlock Holmes", author: "Arthur Conan Doyle", cost: "₹₹149", books_available: 4, img_url: "https://images-eu.ssl-images-amazon.com/images/I/41tT5SJp6+L._AC_SX184_.jpg"},
+]
 
 str=""
 
