@@ -98,3 +98,63 @@ button{
     top:10px;
     left: 45px;
 }
+.book-details {
+    display: grid;
+    position: absolute;
+    width:75%;
+    top: 50px;
+    left: 110px;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 10px;
+    padding: 10px;
+  }
+  
+.book-details > div {
+    background: springgreen;
+    text-align: center;
+    width: 250px;
+    padding: 5px 0;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 20px;
+    font-weight:bold;
+    color: white;
+    border-radius: 5px;
+  }
+.books-count{
+    display: grid;
+    position: absolute;
+    width:75%;
+    top: 95px;
+    left: 110px;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 10px;
+    padding: 10px;
+  }
+  .books-count > div {
+    background: tomato;
+    text-align: center;
+    width: 250px;
+    height:20px;
+    padding: 50px 0;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 20px;
+    font-weight:bold;
+    color: white;
+    border-radius: 5px;
+    vertical-align:middle;
+  }
+  .images-library{
+      background: url("https://www.irishtimes.com/polopoly_fs/1.3578202.1532680148!/image/image.jpg_gen/derivatives/box_620_330/image.jpg") no-repeat;
+      background-size: cover;
+      width: 515px;
+      position: absolute;
+      padding: 200px;
+      margin: 20px;
+      top: 220px;
+      left: 100px;
+      border-radius: 5px;
+  }
+  
+
