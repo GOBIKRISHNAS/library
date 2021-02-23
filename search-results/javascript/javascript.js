@@ -23,7 +23,7 @@ for (i = 0; i < search_books_list.length; i++) {
 else{
     str = "No Books Available"
 }
-
+alert(str)
 document.getElementById("content").innerHTML = str
 
 function validationForm() {
