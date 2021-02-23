@@ -9,7 +9,7 @@ document.getElementById("books-borrowed").innerHTML = books_borrwed;
 
 var btn = document.getElementById("myBtn");
 btn.onclick = function() {
-    window.location = "gobikrishnas.github.io/library/search-results/";
+    window.location = "https://gobikrishnas.github.io/library/search-results/";
     var search = document.getElementsByName("search")[0].value;
     localStorage.setItem("search_value", search);
 }
