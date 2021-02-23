@@ -5,7 +5,7 @@ books_list = [
     {name: "Black 13 (Scott Pearce)", author: "Adam Hamdy", cost: "₹333.00", books_available: 7, img_url: "https://images-eu.ssl-images-amazon.com/images/I/419Y6Jy1OUL._AC_SX184_.jpg"},
 ]
 var search_variable = localStorage.getItem("search_value");
-alert(search_value);
+
 str=""
 search_books_list= []
 for(i=0;i<books_list.length;i++){
