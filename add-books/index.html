@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet">
+    <title>Add Books</title>
+</head>
+<body>
+    <div class="back-button"><button onclick="validationForm();">Back</button></div>
+    <form>
+        <div class="page-name">Add Books</div>
+        <div class="container">
+        <label for="name"><b>Book Name</b></label>
+        <input type="text" name="Book Name" placeholder="Book Name" required>
+        <span class="error"><p id="name_error"></p></span>
+
+        <label for="author"><b>Author</b></label>
+        <input type="text" name="Author" placeholder="Author" required>
+         <span class="error"><p id="author_error"></p></span>
+
+        <label for="books_count"><b>Number of Books</b></label>
+        <input type="text" name= "Number of Books" placeholder="Number of books" required>
+        <span class="error"><p id="count_error"></p></span>
+
+        <label for="book_image"><b>Book Image</b></label>
+        <input type="file" id="img" name="Book Image" accept="image/gif, image/jpeg, image/png" required>
+        <span class="error"><p id="image_error"></p></span>
+
+        <button>Add Book</button>
+    </div>
+    </form>
+    <script src="javascripts/javascript.js" ></script>
+</body>
+</html>
