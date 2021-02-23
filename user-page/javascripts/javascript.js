@@ -7,9 +7,9 @@ document.getElementById("new-arrivals").innerHTML = new_arrivals;
 document.getElementById("books-available").innerHTML = books_available;
 document.getElementById("books-borrowed").innerHTML = books_borrwed;
 
-var btn = document.getElementById("myBtn");
-btn.onclick = function() {
-    window.location = "https://gobikrishnas.github.io/library/search-results/";
+function search() {
     var search = document.getElementsByName("search")[0].value;
+    alert(search)
     localStorage.setItem("search_value", search);
+    location.href = "https://gobikrishnas.github.io/library/search-results/";
 }
