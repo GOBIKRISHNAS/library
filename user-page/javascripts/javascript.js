@@ -9,7 +9,6 @@ document.getElementById("books-borrowed").innerHTML = books_borrwed;
 
 function search() {
     var search = document.getElementsByName("search")[0].value;
-    alert(search)
-    localStorage.setItem("search_value", search);
+    sessionStorage.setItem("search_value", search);
     location.href = "https://gobikrishnas.github.io/library/search-results/";
 }
