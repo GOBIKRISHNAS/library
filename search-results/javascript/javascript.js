@@ -4,12 +4,11 @@ books_list = [
     {name: "The Secret Garden", author: "Frances Hodgson Burnett", cost: "₹124.00", books_available: 5, img_url: "https://images-eu.ssl-images-amazon.com/images/I/51V-OwTiNVL._AC_SX184_.jpg"},
     {name: "Black 13 (Scott Pearce)", author: "Adam Hamdy", cost: "₹333.00", books_available: 7, img_url: "https://images-eu.ssl-images-amazon.com/images/I/419Y6Jy1OUL._AC_SX184_.jpg"},
 ]
-var search_variable = localStorage.getItem("search_value");
+var search_variable =  sessionStorage.getItem("search_value");
 
 str=""
 search_books_list= []
 for(i=0;i<books_list.length;i++){
-    
     string = (books_list[i].name).toLowerCase()
     if(string.includes(search_variable) == true){
         search_books_list.push(books_list[i]);
