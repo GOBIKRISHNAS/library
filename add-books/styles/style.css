@@ -1,0 +1,53 @@
+Body {  
+    font-family: Calibri, Helvetica, sans-serif;  
+    background-color: pink;  
+  }  
+  button {   
+         background-color: #4CAF50;   
+         width: 100%;  
+          color: orange;   
+          padding: 15px;   
+          margin: 10px 0px;   
+          border: none;   
+          cursor: pointer;   
+           }   
+   form {   
+    margin: auto;
+    width: 40%;
+    padding: 100px 10px;
+        }   
+   input[type=text]{   
+          width: 100%;   
+          margin: 8px 0;  
+          padding: 12px 20px;   
+          display: inline-block;    
+          box-sizing: border-box;   
+      }  
+   button:hover {   
+          opacity: 0.7;   
+      }    
+   .container {   
+          padding: 25px;  
+      }  
+.page-name{
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 30px;
+}
+      .back-button button{
+        position: absolute;
+        width: 100px;
+        height: 40px;
+        top: 10px;
+        left: 10px;
+        background: none;
+        border: none;
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+        font-weight: bold;
+        font-size: 25px;
+        color: black;
+    }
+
+    .error{
+        color: red;
+      }
