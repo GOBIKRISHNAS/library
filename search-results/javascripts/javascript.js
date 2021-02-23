@@ -18,7 +18,7 @@ for(i=0;i<books_list.length;i++){
 
 if (search_books_list.length>0){
 for (i = 0; i < search_books_list.length; i++) {
-    str = str + "<li><img src = '"+ books_list[i].img_url + "' alt='' width=180px id='pic'><div class='details'><h1>" + books_list[i].name + "</h1><p>" + books_list[i].author +"</p><p>" + books_list[i].cost + "</p><p>Books Available: " + books_list[i].books_available + "</p><input type='button' value='Borrow Now'></div></li>"
+    str = str + "<li><img src = '"+ search_books_list[i].img_url + "' alt='' width=180px id='pic'><div class='details'><h1>" + search_books_list[i].name + "</h1><p>" + search_books_list[i].author +"</p><p>" + search_books_list[i].cost + "</p><p>Books Available: " + search_books_list[i].books_available + "</p><input type='button' value='Borrow Now'></div></li>"
 }}
 else{
     str = "No Books Available"
