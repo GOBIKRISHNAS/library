@@ -1,4 +1,4 @@
-var books_available = 4
+window.books_available = 4
 var books_borrwed = 5
 var new_arrivals = 2
 
